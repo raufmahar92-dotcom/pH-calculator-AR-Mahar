@@ -54,7 +54,16 @@ export const AIAssistant: React.FC = () => {
         }),
       });
 
-      const data = await response.json();
+      const contentType = response.headers.get('content-type');
+      let data: any = {};
+      if (contentType && contentType.includes('application/json')) {
+        data = await response.json();
+      } else {
+        const text = await response.text();
+        throw new Error(
+          `Server returned non-JSON response (${response.status}). Please verify that GEMINI_API_KEY environment variable is configured in Vercel / environment settings.`
+        );
+      }
 
       if (!response.ok) {
         throw new Error(data.error || 'Failed to reach Chemistry AI Tutor.');

@@ -1,20 +1,14 @@
-import express from "express";
-import path from "path";
 import { GoogleGenAI } from "@google/genai";
-import { createServer as createViteServer } from "vite";
-
-const app = express();
-app.use(express.json());
-
-const PORT = 3000;
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 let aiClient: GoogleGenAI | null = null;
+
 function getGeminiClient(): GoogleGenAI {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    throw new Error("GEMINI_API_KEY environment variable is not configured. Please set GEMINI_API_KEY in Vercel Environment Variables.");
+  }
   if (!aiClient) {
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) {
-      throw new Error("GEMINI_API_KEY environment variable is not configured.");
-    }
     aiClient = new GoogleGenAI({
       apiKey,
       httpOptions: {
@@ -40,9 +34,20 @@ Rules:
 - Never generate false chemistry information.
 - Keep answers educational.`;
 
-app.post("/api/chat", async (req, res) => {
+export default async function handler(req: VercelRequest | any, res: VercelResponse | any) {
+  // Support both GET for healthcheck and POST for chat requests
+  if (req.method === "GET") {
+    return res.status(200).json({ status: "ok", message: "Chemistry AI Tutor API is ready." });
+  }
+
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
+
   try {
-    const { message, history } = req.body;
+    const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body || {};
+    const { message, history } = body;
+
     if (!message || typeof message !== "string") {
       return res.status(400).json({ error: "Message is required." });
     }
@@ -66,7 +71,7 @@ app.post("/api/chat", async (req, res) => {
     });
 
     const response = await client.models.generateContent({
-      model: "gemini-3.6-flash",
+      model: "gemini-2.5-flash",
       contents,
       config: {
         systemInstruction: SYSTEM_PROMPT,
@@ -75,33 +80,11 @@ app.post("/api/chat", async (req, res) => {
     });
 
     const responseText = response.text || "No response generated.";
-    res.json({ text: responseText });
+    return res.status(200).json({ text: responseText });
   } catch (error: any) {
     console.error("Chemistry AI Assistant Error:", error);
-    res.status(500).json({
+    return res.status(500).json({
       error: error?.message || "An error occurred while connecting to Chemistry AI Tutor.",
     });
   }
-});
-
-async function startServer() {
-  if (process.env.NODE_ENV !== "production") {
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: "spa",
-    });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
-  }
-
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on port ${PORT}`);
-  });
 }
-
-startServer();

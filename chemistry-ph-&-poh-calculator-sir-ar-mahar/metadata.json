@@ -1,6 +1,0 @@
-{
-  "name": "Chemistry pH & pOH Calculator Sir AR Mahar",
-  "description": "Comprehensive chemistry pH, pOH, concentration, molarity, molality, dilution calculator with AI Tutor, periodic table, unit converter, and formula references.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

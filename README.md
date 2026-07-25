@@ -5,7 +5,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Powered by Gemini](https://img.shields.io/badge/Gemini_AI-2.5_Flash-8E7CC3?style=for-the-badge&logo=google)](https://ai.google.dev/)
 
-A modern, interactive, and comprehensive web application for chemistry students, educators, and lab researchers. Created by **Sir AR Mahar**, this suite provides accurate solution calculations, stoichiometry solvers, an interactive periodic table reference, and an intelligent **AI Chemistry Tutor** powered by Google's **Gemini 2.5 Flash** model.
+A modern, interactive, and comprehensive web application for chemistry students, educators, and lab researchers. Created by **Sir AR Mahar**, this suite provides accurate solution calculations, stoichiometry solvers, an interactive periodic table reference, and an intelligent **AI Chemistry Tutor** powered by Google's **Gemini 2.5 Flash** model
+.chemistry Lab is a complete chemistry calculation and tutoring tool built for students and teachers who need fast, accurate acid-base chemistry calculations along with real explanations — not just answers. Many students struggle with pH, pOH, molarity, molality, and dilution problems because they don't have access to a reliable calculator or a tutor available whenever they get stuck. This app solves that by combining: A full suite of accurate chemistry calculators Step-by-step, easy-to-follow solutions An AI chemistry tutor available anytime to explain concepts in simple language Built for students and teachers at GH1-047 Govt. Higher Secondary School, Ali Mahar, District Ghotki, Sindh, and for any student learning acid-base chemistry.
 
 🌐 **Live Application:** [https://p-h-calculator-ar-mahar.vercel.app/](https://p-h-calculator-ar-mahar.vercel.app/)
 
@@ -65,7 +66,8 @@ An interactive 118-element periodic table with atomic properties, molar mass loo
   - - **pH SCALE **:
     - In which all acid base neutarl substance is present
     - ![pH Scale](ph%20scale%204.jpg)
-
+b. Live App
+ c. Features Calculators: pH from [H+] [H+] from pH pOH from [OH-] [OH-] from pOH pH <-> pOH conversion Acid/Base test Molarity (M) Molality (m) Dilution (M1V1 = M2V2) — solve for stock volume, stock concentration, target concentration, or final volume Quick benchmark presets (Strong Acid, Weak Acid, Neutral Water, Weak Base, Strong Base) Temperature correction slider Explicit Calculate and Reset controls — results only appear after pressing Calculate AI Chemistry Tutor — ask any chemistry question, get an instant, simple explanation Interactive Periodic Table Formulas quick-reference sheet Unit Converter Visual pH Scale reference History — saved past calculations with favorite/delete options Dark mode / Light mode toggle
 ---
 
 ## 🛠️ Tech Stack
@@ -129,7 +131,7 @@ An interactive 118-element periodic table with atomic properties, molar mass loo
 
 ## 👨‍🏫 Author & Credits
 
-Designed & Developed by **Sir AR Mahar**  
+Designed & Developed by **Sir Abdul Rauf Mahar**  
 Live Website: [https://p-h-calculator-ar-mahar.vercel.app/](https://p-h-calculator-ar-mahar.vercel.app/)
 
 ---

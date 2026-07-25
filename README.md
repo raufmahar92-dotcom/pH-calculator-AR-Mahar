@@ -64,8 +64,12 @@ ALL ELEMENT includin
 - **PDF Export & History**:
   - Export calculation reports to formatted PDF documents using `jsPDF`.
   - Save and bookmark calculation history locally.
- 
-  - - **pH SCALE **:
+ ![PDF Export Option](pdf%20option.jpg)                                             ![PDF Result](resultpdf.jpg)
+
+
+
+
+   - - **pH SCALE **:
     - In which all acid base neutarl substance is present
     - ![pH Scale](ph%20scale%204.jpg)
 b. Live App

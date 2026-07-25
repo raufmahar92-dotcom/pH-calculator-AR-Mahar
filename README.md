@@ -62,9 +62,28 @@ ALL ELEMENT includin
   - Full element details including atomic number, atomic mass, electronic structure, and category color-coding.
 
 - **PDF Export & History**:
+- ✨ Features:
+- 📑 Professional report layout
+- 🧪 Complete calculation details
+- 📝 Step-by-step solution
+- 📅 Automatic date & time stamp
+- 👨‍🏫 Teacher & student friendly
+- 💾 Instant PDF download
+- 🖨️ Print-ready format
+
+### PDF Export Interface
+
+![PDF Export Option](pdf%20option.jpg)
+
+### Sample Generated PDF Report
+
+![PDF Result](resultpdf.jpg)
   - Export calculation reports to formatted PDF documents using `jsPDF`.
   - Save and bookmark calculation history locally.
- ![PDF Export Option](pdf%20option.jpg)                              ### 📄 Result Sheet in PDF Form       ![PDF Result](resultpdf.jpg)
+  - 📑 Smart PDF Report Generator
+ ![PDF Export Option](pdf%20option.jpg)
+
+    🧪 Export Calculation Results as PDF         ![PDF Result](resultpdf.jpg)
 
 
 

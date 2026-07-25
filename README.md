@@ -16,21 +16,20 @@ A modern, interactive, and comprehensive web application for chemistry students,
 ### 1. pH & pOH Calculator Dashboard
 Calculate pH, pOH, $[H^+]$, and $[OH^-]$ concentrations with explicit **Calculate** and **Reset** controls, a visual 0–14 pH spectrum indicator, solution classification (Acidic, Neutral, Basic), and complete step-by-step mathematical proofs.
 
-![pH & pOH Calculator Dashboard](./public/screenshots/ph_calculator_dashboard.jpg)
-
+![pH & pOH Calculator Dashboard](calculator%201.jpg)
 ---
 
 ### 2. Chemistry AI Tutor (Powered by Gemini 2.5 Flash)
 An AI chemistry assistant capable of explaining buffer solutions, solving multi-step stoichiometry problems, deriving equilibrium equations, and answering student questions in real-time.
 
-![Chemistry AI Tutor Interface](./public/screenshots/ai_tutor_interface.jpg)
+![AI Tutor](ai%20tutor%202.jpg)
 
 ---
 
 ### 3. Interactive Periodic Table & Reference Suite
 An interactive 118-element periodic table with atomic properties, molar mass lookups, a complete chemistry formula sheet, and solution concentration unit converters.
 
-![Interactive Periodic Table & Formula Suite](./public/screenshots/periodic_table_suite.jpg)
+[Periodic Table](perodic%20table%203.jpg)
 
 ---
 
@@ -62,6 +61,10 @@ An interactive 118-element periodic table with atomic properties, molar mass loo
 - **PDF Export & History**:
   - Export calculation reports to formatted PDF documents using `jsPDF`.
   - Save and bookmark calculation history locally.
+ 
+  - - **pH SCALE **:
+    - In which all acid base neutarl substance is present
+    - ![pH Scale](ph%20scale%204.jpg)
 
 ---
 

@@ -29,6 +29,8 @@ An AI chemistry assistant capable of explaining buffer solutions, solving multi-
 
 ### 3. Interactive Periodic Table & Reference Suite
 An interactive 118-element periodic table with atomic properties, molar mass lookups, a complete chemistry formula sheet, and solution concentration unit converters.
+ALL ELEMENT includin 
+1 Metal      2 Non-Metal     3 Metalliod      4 Radioactive element   5 Actinide   6 Lanthenide  7 Transition Element 
 
 [Periodic Table](perodic%20table%203.jpg)
 

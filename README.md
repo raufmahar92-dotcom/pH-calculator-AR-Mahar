@@ -75,9 +75,7 @@ ALL ELEMENT includin
 
 ![PDF Export Option](pdf%20option.jpg)
 
-### Sample Generated PDF Report
 
-![PDF Result](resultpdf.jpg)
   - Export calculation reports to formatted PDF documents using `jsPDF`.
   - Save and bookmark calculation history locally.
   - 📑 Smart PDF Report Generator
@@ -96,6 +94,13 @@ ALL ELEMENT includin
 b. Live App
  c. Features Calculators: pH from [H+] [H+] from pH pOH from [OH-] [OH-] from pOH pH <-> pOH conversion Acid/Base test Molarity (M) Molality (m) Dilution (M1V1 = M2V2) — solve for stock volume, stock concentration, target concentration, or final volume Quick benchmark presets (Strong Acid, Weak Acid, Neutral Water, Weak Base, Strong Base) Temperature correction slider Explicit Calculate and Reset controls — results only appear after pressing Calculate AI Chemistry Tutor — ask any chemistry question, get an instant, simple explanation Interactive Periodic Table Formulas quick-reference sheet Unit Converter Visual pH Scale reference History — saved past calculations with favorite/delete options Dark mode / Light mode toggle
 ---
+
+## Unit Converter
+By this tool we can convert different unit like tempreature into aa different scale 
+.Concentration conversion unit 
+
+
+![Unit Converter](convetor.jpg)
 
 ## 🛠️ Tech Stack
 
